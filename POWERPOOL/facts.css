@@ -1,0 +1,80 @@
+/* General styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+header {
+    color: rgb(239, 242, 242);
+    padding: 300px;
+    text-align: centre;
+    background-image: url(factss.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+
+.facts-container {
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #00695c;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Fact Card Styles */
+.fact-card {
+    background: url('facts.jpg') no-repeat center center/cover;
+    padding: 20px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.fact-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    transition: background-color 0.3s;
+    border-radius: 0 0 10px 10px;
+}
+
+.fact-card:hover .fact-content {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    color: #004d40;
+}
+
+p {
+    margin: 0;
+    color: #333;
+}

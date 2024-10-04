@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Government Plans Finder</title>
+    <link rel="stylesheet" href="plans.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find Government Plans for Your Area</h1>
+       
+        <form id="locationForm">
+            <label for="locationInput">Enter Area:</label>
+            <input type="text" id="locationInput" placeholder="Enter area">
+            <br>
+            <label for="pinInput">Enter PIN Code:</label>
+            <input type="text" id="pinInput" placeholder="Enter PIN code">
+            <br>
+            <button type="submit">Check Plans</button>
+        </form>
+
+
+        <p id="formMessage" class="hidden"></p>
+        <div id="resultDiv" class="hidden">
+            <p id="plansPara"></p>
+        </div>
+    </div>
+
+
+    <script src="plans.js"></script>
+</body>
+</html>

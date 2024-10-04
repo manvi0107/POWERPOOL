@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell or Donate Your Assets</title>
+    <link rel="stylesheet" href="sell.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sell or Donate Your Assets</h1>
+        <p class="intro-text">Choose whether you'd like to sell or donate your assets. Give them a new purpose and make an impact today!</p>
+        
+        <div class="options-container">
+            <!-- Sell Section -->
+            <div class="card" id="sell-card">
+                <h2>Sell Your Asset</h2>
+                <p>Turn your assets into cash! Enter the details and list them for sale.</p>
+                <button onclick="toggleForm('sell-form')">Sell Now</button>
+            </div>
+
+            <!-- Donate Section -->
+            <div class="card" id="donate-card">
+                <h2>Donate Your Asset</h2>
+                <p>Help others by donating your assets to those in need. Make a difference today!</p>
+                <button onclick="toggleForm('donate-form')">Donate Now</button>
+            </div>
+        </div>
+        
+        <!-- Sell Form -->
+        <div class="form-container hidden" id="sell-form">
+            <h2>Sell Your Asset</h2>
+            <form action="#" method="POST">
+                <label for="sell-name">Asset Name:</label>
+                <input type="text" id="sell-name" name="asset_name" required>
+
+                <label for="sell-description">Description:</label>
+                <textarea id="sell-description" name="description" rows="4" required></textarea>
+
+                <label for="sell-price">Price ($):</label>
+                <input type="number" id="sell-price" name="price" required>
+
+                <label for="sell-contact">Contact Info:</label>
+                <input type="email" id="sell-contact" name="contact" required>
+
+                <button type="submit">Submit</button>
+                <button type="button" onclick="toggleForm('sell-form')">Cancel</button>
+            </form>
+        </div>
+
+        <!-- Donate Form -->
+        <div class="form-container hidden" id="donate-form">
+            <h2>Donate Your Asset</h2>
+            <form action="#" method="POST">
+                <label for="donate-name">Asset Name:</label>
+                <input type="text" id="donate-name" name="asset_name" required>
+
+                <label for="donate-description">Description:</label>
+                <textarea id="donate-description" name="description" rows="4" required></textarea>
+
+                <label for="donate-condition">Condition:</label>
+                <select id="donate-condition" name="condition" required>
+                    <option value="new">New</option>
+                    <option value="used">Used</option>
+                    <option value="fair">Fair</option>
+                </select>
+
+                <label for="donate-contact">Contact Info:</label>
+                <input type="email" id="donate-contact" name="contact" required>
+
+                <button type="submit">Submit</button>
+                <button type="button" onclick="toggleForm('donate-form')">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="sell.js"></script>
+</body>
+</html>
+
+

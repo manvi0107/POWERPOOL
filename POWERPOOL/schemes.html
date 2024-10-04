@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes - Sustainable Development & Renewable Resources</title>
+    <link rel="stylesheet" href="schemes.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Government Schemes for Sustainable Development & Renewable Resources</h1>
+        <p class="intro-text">Find government schemes available in your locality to support sustainable development and renewable energy resources.</p>
+
+        <!-- Locality Filter Section -->
+        <div class="filter-section">
+            <label for="locality">Select Your Locality:</label>
+            <select id="locality" onchange="filterSchemes()">
+                <option value="all">All Localities</option>
+                <option value="urban">Urban Area</option>
+                <option value="rural">Rural Area</option>
+                <option value="coastal">Coastal Area</option>
+                <option value="hills">Hills & Mountains</option>
+            </select>
+        </div>
+
+        <!-- Schemes Section -->
+        <div id="schemes-container">
+            <div class="scheme-card" data-locality="urban">
+                <h2>Solar Rooftop Scheme</h2>
+                <p>Subsidy on installing solar rooftop systems for urban households.</p>
+            </div>
+
+            <div class="scheme-card" data-locality="rural">
+                <h2>National Biogas and Manure Management Programme</h2>
+                <p>Support for setting up family-type biogas plants in rural areas.</p>
+            </div>
+
+            <div class="scheme-card" data-locality="coastal">
+                <h2>Coastal Zone Management Programme</h2>
+                <p>Protection and sustainable development of coastal ecosystems.</p>
+            </div>
+
+            <div class="scheme-card" data-locality="hills">
+                <h2>Himalayan Region Sustainable Development Initiative</h2>
+                <p>Promoting eco-friendly tourism and renewable energy solutions in hill regions.</p>
+            </div>
+
+            <div class="scheme-card" data-locality="urban">
+                <h2>Energy Efficiency Improvement for Urban Areas</h2>
+                <p>Government grants for implementing energy-efficient technologies in urban infrastructures.</p>
+            </div>
+
+            <div class="scheme-card" data-locality="rural">
+                <h2>Green India Mission</h2>
+                <p>Promoting afforestation and forest conservation in rural areas.</p>
+            </div>
+
+            <div class="scheme-card" data-locality="all">
+                <h2>Pradhan Mantri Kisan Urja Suraksha (PM-KUSUM)</h2>
+                <p>Providing solar-powered pumps for irrigation and solar energy generation across all regions.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="schemes.js"></script>
+</body>
+</html>

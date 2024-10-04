@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <!-- <img src="contactus.png"> -->
+    <section id="contact">
+        <div class="form-container">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+                    <label for="Location">Location:</label>
+                    <textarea id="Location" name="Location" placeholder="Enter Location"></textarea><br><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your message"></textarea><br><br><br>
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+                <p id="formMessage" class="hidden"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="contact.js"></script>
+</body>
+</html>
