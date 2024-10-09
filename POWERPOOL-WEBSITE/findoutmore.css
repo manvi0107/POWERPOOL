@@ -169,54 +169,51 @@ footer p {
     transform: scale(1.3); /* Zoom effect */
 }
 /* Responsive Styles */
-@media only screen and (max-width: 1200px) {
-    .container {
-        width: 95%;
+
+/* For tablets and larger mobile phones (768px and below) */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
     }
 
-    #schemes-container {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .container {
-        padding: 20px;
+    .card {
+        width: 80%;
     }
 
-    .filter-section label {
-        font-size: 1.1em;
+    .hero h2 {
+        font-size: 2em;
     }
 
-    .filter-section select {
-        font-size: 0.9em;
-        padding: 8px;
-    }
-
-    #schemes-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    h1 {
-        font-size: 1.5em;
-    }
-
-    .filter-section label {
+    .hero p {
         font-size: 1em;
     }
+}
 
-    .filter-section select {
-        font-size: 0.85em;
-        padding: 7px;
+/* For mobile phones (480px and below) */
+@media screen and (max-width: 480px) {
+    .navbar .nav-list li {
+        display: block;
+        margin: 10px 0;
     }
 
-    #schemes-container {
-        grid-template-columns: 1fr;
+    .hero h2 {
+        font-size: 1.8em;
     }
 
-    .scheme-card {
-        padding: 15px;
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+
+    .content {
+        padding: 20px 10px;
+    }
+
+    .card {
+        width: 100%;
     }
 }

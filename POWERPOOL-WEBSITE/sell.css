@@ -124,4 +124,52 @@ input:focus, textarea:focus, select:focus {
 button:hover {
     background-color: #45a049;
 }
+/* Responsive Styles */
 
+/* For tablets and larger mobile phones (768px and below) */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
+
+/* For mobile phones (480px and below) */
+@media screen and (max-width: 480px) {
+    .navbar .nav-list li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+
+    .content {
+        padding: 20px 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
