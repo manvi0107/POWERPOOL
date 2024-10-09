@@ -93,3 +93,55 @@ button:hover {
 .btn{
     margin-top: 85px;
 }
+/* Responsive Styles */
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+
+    #schemes-container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .filter-section label {
+        font-size: 1.1em;
+    }
+
+    .filter-section select {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    #schemes-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .filter-section label {
+        font-size: 1em;
+    }
+
+    .filter-section select {
+        font-size: 0.85em;
+        padding: 7px;
+    }
+
+    #schemes-container {
+        grid-template-columns: 1fr;
+    }
+
+    .scheme-card {
+        padding: 15px;
+    }
+}
